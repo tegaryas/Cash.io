@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "933789474910",
+    "project_id": "cashio-55f99",
+    "storage_bucket": "cashio-55f99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933789474910:android:757c2204178443c32994cf",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_cashier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933789474910-99qtg9adnf7iiltcqut9ruor3fnb143s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADORmqUvpzy0VJycJsucjEWuTFSuMzfCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933789474910-99qtg9adnf7iiltcqut9ruor3fnb143s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
