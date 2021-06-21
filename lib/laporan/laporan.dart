@@ -13,20 +13,21 @@ class _LaporanState extends State<Laporan> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        shadowColor: Colors.black,
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          elevation: 0,
-          shadowColor: Colors.black,
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
-          title: Text(
-            "Laporan",
-            style: TextStyle(
-              color: Colors.black,
-            ),
+        foregroundColor: Colors.black,
+        title: Text(
+          "Laporan",
+          style: TextStyle(
+            color: Colors.black,
           ),
         ),
-        body: Column(
+      ),
+      body: SingleChildScrollView(
+        child: Column(
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -54,23 +55,22 @@ class _LaporanState extends State<Laporan> {
                 ],
               ),
             ),
-            SingleChildScrollView(
-              physics: BouncingScrollPhysics(),
-              child: GetBuilder<TransaksiController>(
-                init: TransaksiController(),
-                builder: (val) {
-                  return Column(
-                    children: [
-                      for (var b in val.transaksi)
-                        ContentHis(
-                          b: b,
-                        )
-                    ],
-                  );
-                },
-              ),
+            GetBuilder<TransaksiController>(
+              init: TransaksiController(),
+              builder: (val) {
+                return Column(
+                  children: [
+                    for (var b in val.transaksi)
+                      ContentHis(
+                        b: b,
+                      )
+                  ],
+                );
+              },
             )
           ],
-        ));
+        ),
+      ),
+    );
   }
 }
