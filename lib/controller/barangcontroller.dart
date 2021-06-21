@@ -73,14 +73,11 @@ class Getbarang extends GetxController {
               },
             );
             update();
-            // print(barang);
-            // update();
           },
         );
         update();
       },
     );
-
     update();
   }
 

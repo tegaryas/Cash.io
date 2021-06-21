@@ -107,18 +107,26 @@ class _ContentHisState extends State<ContentHis> {
                           color: !x ? Colors.black : Colors.white,
                         ),
                       ),
-                      Text(
-                        b['jumlahbeli'].toString(),
-                        style: TextStyle(
-                          color: !x ? Colors.black : Colors.white,
-                        ),
-                      ),
-                      Text(
-                        uang.format(
-                          b['totharga'],
-                        ),
-                        style: TextStyle(
-                          color: !x ? Colors.black : Colors.white,
+                      Container(
+                        width: 120,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              b['jumlahbeli'].toString(),
+                              style: TextStyle(
+                                color: !x ? Colors.black : Colors.white,
+                              ),
+                            ),
+                            Text(
+                              uang.format(
+                                b['totharga'],
+                              ),
+                              style: TextStyle(
+                                color: !x ? Colors.black : Colors.white,
+                              ),
+                            )
+                          ],
                         ),
                       )
                     ],
@@ -131,15 +139,3 @@ class _ContentHisState extends State<ContentHis> {
     );
   }
 }
-
-// Column(
-//       children: [
-//         Text(widget.a['data']['tgl'].toDate().toString()),
-//         Text(widget.a['id']),
-//         for (var b in widget.a['data']['data'])
-//           Text(
-//             b.toString(),
-//           ),
-//         Divider(),
-//       ],
-//     );

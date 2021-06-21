@@ -53,38 +53,9 @@ class _ListBarangState extends State<ListBarang> {
                 ],
               );
             },
-          )
-          // Expa(
-          //   id: "24u90",
-          //   nama: "gulaku 1kg",
-          //   harga: 120000,
-          //   stock: 20,
-          // ),
-          // Expa(
-          //   id: "yuriy",
-          //   nama: "gulaku 1kg",
-          //   harga: 120000,
-          //   stock: 5,
-          // )
+          ),
         ],
       ),
     );
   }
 }
-
-///
-///
-///
-///
-///
-///
-///
-///
-///
-///
-///
-///
-///
-///
-///
-///

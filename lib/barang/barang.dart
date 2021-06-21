@@ -65,7 +65,7 @@ class _BarangState extends State<Barang> {
                   );
                 },
                 child: Icon(
-                  Icons.store_mall_directory_outlined,
+                  Icons.add,
                   color: Colors.white,
                 ),
               )

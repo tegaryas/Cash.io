@@ -124,27 +124,6 @@ class _ExpaState extends State<Expa> {
             child: Icon(Icons.chevron_right_rounded),
           ),
           children: [
-            // Container(
-            //   margin: EdgeInsets.all(10),
-            //   width: 140,
-            //   height: 140,
-            //   decoration: BoxDecoration(
-            //       color: Colors.white,
-            //       shape: BoxShape.circle,
-            //       boxShadow: [
-            //         BoxShadow(
-            //           color: Colors.black26,
-            //           blurRadius: 5,
-            //         ),
-            //       ]),
-            //   child: ClipRRect(
-            //     borderRadius: BorderRadius.circular(100),
-            //     child: Image.asset(
-            //       "assets/gula.jpg",
-            //       fit: BoxFit.cover,
-            //     ),
-            //   ),
-            // ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
